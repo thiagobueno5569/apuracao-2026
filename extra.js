@@ -60,6 +60,38 @@
     };
   }
 
+  /* Pix: copiar só a chave aleatória (sem abrir a página do banco, que mostra parte do CPF) */
+  var PIXKEY="318b6a5e-02b3-418b-9b25-53e48341d72d";
+  var PIXCODE="00020126580014BR.GOV.BCB.PIX0136318b6a5e-02b3-418b-9b25-53e48341d72d5204000053039865802BR5921Thiago Bueno da Silva6009SAO PAULO62140510oLiy9FMx9t6304D82C";
+  var pixSec=$("pix");
+  if(pixSec){
+    var lk=$("pixLink"); if(lk) lk.remove();
+    var txts=pixSec.querySelectorAll(".pixtxt p.sub");
+    if(txts[1]) txts[1].innerHTML="Copie a chave Pix abaixo e cole no app do seu banco, na opção <b>Pix → Pagar com chave</b>. Pelo celular, também dá para escanear o QR Code.";
+    var keyBox=document.createElement("div");keyBox.className="pixkey";keyBox.style.margin="0 0 10px";
+    keyBox.innerHTML='<span class="sub">Chave Pix aleatória</span><b id="pixKeyTxt"></b>';
+    if(txts[1]) txts[1].after(keyBox);
+    $("pixKeyTxt").textContent=PIXKEY;
+    var msg=$("pixMsg");
+    function copy(t,ok){
+      var done=function(){msg.textContent=ok};
+      var fail=function(){var r=document.createRange();r.selectNodeContents($("pixKeyTxt"));var sel=getSelection();sel.removeAllRanges();sel.addRange(r);msg.textContent="Chave selecionada: use Ctrl+C (ou segure e copie no celular)."};
+      try{navigator.clipboard.writeText(t).then(done,fail)}catch(e){fail()}
+    }
+    var b1=$("pixCopyCode");
+    if(b1){var nb=b1.cloneNode(true);b1.replaceWith(nb);nb.textContent="Copiar chave Pix";nb.classList.add("pixbtn");nb.style.cssText="background:#820ad1;border-color:#820ad1;color:#fff";
+      nb.onclick=function(){copy(PIXKEY,"Chave Pix copiada! Cole no app do seu banco.")};
+      var b2=document.createElement("button");b2.type="button";b2.className="btn";b2.textContent="Copiar Pix copia e cola";
+      b2.onclick=function(){copy(PIXCODE,"Código copiado! No app do banco, use Pix copia e cola.")};
+      nb.after(b2);}
+    var qr=$("pixQr");
+    var drawQR=function(tries){
+      if(window.QRCode&&qr){qr.innerHTML="";qr.hidden=false;try{new QRCode(qr,{text:PIXCODE,width:240,height:240,correctLevel:QRCode.CorrectLevel.M})}catch(e){qr.hidden=true}}
+      else if(tries<40) setTimeout(function(){drawQR(tries+1)},250);
+    };
+    drawQR(0); setTimeout(function(){drawQR(0)},3000);
+  }
+
   /* 3. Contador de visualizações (público, sem cadastro) */
   var NS="https://abacus.jasoncameron.dev/", KEY="thiagobueno5569-apuracao2026/visitas";
   var box=document.querySelector(".status");
