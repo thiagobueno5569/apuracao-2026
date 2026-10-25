@@ -47,6 +47,19 @@
     },1000);
   }
 
+  /* Seções: aceitar urnas já recebidas (durante a apuração o TSE marca como "Recebido" antes de "Totalizado") */
+  if(typeof window.secResult==="function"&&typeof URNA!=="undefined"){
+    window.secResult=async function(u,mcd,z,s){
+      var base=URNA+"dados/"+u+"/"+mcd+"/"+z+"/"+s+"/", aux;
+      try{aux=await getJ(base+"p003221-"+u+"-m"+mcd+"-z"+z+"-s"+s+"-aux.json?t="+Date.now())}catch(e){return null}
+      var hs=(aux.hashes||[]).filter(function(x){return !/exclu|rejeit|cancel|anula|substitu/i.test(x.st||"")&&(x.arq||[]).some(function(a){return a.tp==="bu"})});
+      var h=hs[hs.length-1]; if(!h) return null;
+      var f=h.arq.filter(function(a){return a.tp==="bu"})[0];
+      var r=await fetch(base+h.hash+"/"+f.nm,{cache:"no-store"}); if(!r.ok) return null;
+      return derVotes(await r.arrayBuffer());
+    };
+  }
+
   /* 3. Contador de visualizações (público, sem cadastro) */
   var NS="https://abacus.jasoncameron.dev/", KEY="thiagobueno5569-apuracao2026/visitas";
   var box=document.querySelector(".status");
