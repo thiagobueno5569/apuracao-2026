@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 250" width="760" height="250" font-family="Arial, Helvetica, sans-serif">
+<defs><linearGradient id="bg" x1="0" x2="1"><stop offset="0" stop-color="#fbe3e6"/><stop offset=".45" stop-color="#ffffff"/><stop offset=".55" stop-color="#ffffff"/><stop offset="1" stop-color="#e2ebfb"/></linearGradient></defs>
+<rect width="760" height="250" rx="22" fill="url(#bg)" stroke="#e2e0db"/>
+<text x="30" y="40" font-size="13" font-weight="700" letter-spacing="2" fill="#686a72">ELEIÇÕES 2026 · PRESIDENTE · 2º TURNO · 100% APURADO</text>
+<rect x="30" y="56" width="110" height="26" rx="13" fill="#15161a"/><text x="85" y="74" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">ELEITO</text>
+<text x="30" y="112" font-size="20" font-weight="700" fill="#15161a">Lula (PT) · 13</text>
+<text x="30" y="168" font-size="58" font-weight="800" fill="#d4243b">51,79%</text>
+<text x="30" y="192" font-size="14" fill="#686a72">64.256.232 votos</text>
+<text x="730" y="112" font-size="20" font-weight="700" fill="#15161a" text-anchor="end">Flávio Bolsonaro (PL) · 22</text>
+<text x="730" y="168" font-size="58" font-weight="800" fill="#1c5ccf" text-anchor="end">48,21%</text>
+<text x="730" y="192" font-size="14" fill="#686a72" text-anchor="end">59.826.041 votos</text>
+<rect x="30" y="210" width="362.5" height="16" rx="8" fill="#d4243b"/><rect x="392.5" y="210" width="337.5" height="16" rx="8" fill="#1c5ccf"/>
+<rect x="379" y="206" width="2" height="24" fill="#15161a"/>
+</svg>
