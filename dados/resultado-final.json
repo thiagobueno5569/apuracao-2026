@@ -1,0 +1,214 @@
+{
+ "eleicao": "Presidente 2026 - 2º turno",
+ "fonte": "TSE - resultados.tse.jus.br",
+ "atualizado": "25/10/2026 23:27:02",
+ "apurado_pct": 100,
+ "brasil": {
+  "lula_pct": 51.79,
+  "flavio_pct": 48.21,
+  "lula_votos": 64256232,
+  "flavio_votos": 59826041,
+  "comparecimento_pct": 80.78,
+  "abstencao_pct": 19.22,
+  "brancos_pct": 1.12,
+  "nulos_pct": 2.12,
+  "eleito": "Lula"
+ },
+ "exterior": {
+  "lula_pct": 53.86,
+  "flavio_pct": 46.14,
+  "lula_votos": 200154,
+  "flavio_votos": 171497
+ },
+ "estados": {
+  "AC": {
+   "nome": "Acre",
+   "lula_pct": 33.43,
+   "flavio_pct": 66.57,
+   "lula_votos": 144513,
+   "flavio_votos": 287715
+  },
+  "AL": {
+   "nome": "Alagoas",
+   "lula_pct": 60.77,
+   "flavio_pct": 39.23,
+   "lula_votos": 1152621,
+   "flavio_votos": 744140
+  },
+  "AM": {
+   "nome": "Amazonas",
+   "lula_pct": 54.02,
+   "flavio_pct": 45.98,
+   "lula_votos": 1145783,
+   "flavio_votos": 975245
+  },
+  "AP": {
+   "nome": "Amapá",
+   "lula_pct": 52.88,
+   "flavio_pct": 47.12,
+   "lula_votos": 222968,
+   "flavio_votos": 198674
+  },
+  "BA": {
+   "nome": "Bahia",
+   "lula_pct": 71.31,
+   "flavio_pct": 28.69,
+   "lula_votos": 6485258,
+   "flavio_votos": 2608761
+  },
+  "CE": {
+   "nome": "Ceará",
+   "lula_pct": 68.93,
+   "flavio_pct": 31.07,
+   "lula_votos": 4036124,
+   "flavio_votos": 1819478
+  },
+  "DF": {
+   "nome": "Distrito Federal",
+   "lula_pct": 45.72,
+   "flavio_pct": 54.28,
+   "lula_votos": 825224,
+   "flavio_votos": 979542
+  },
+  "ES": {
+   "nome": "Espírito Santo",
+   "lula_pct": 43.63,
+   "flavio_pct": 56.37,
+   "lula_votos": 1001965,
+   "flavio_votos": 1294504
+  },
+  "GO": {
+   "nome": "Goiás",
+   "lula_pct": 40.34,
+   "flavio_pct": 59.66,
+   "lula_votos": 1585555,
+   "flavio_votos": 2345334
+  },
+  "MA": {
+   "nome": "Maranhão",
+   "lula_pct": 69.54,
+   "flavio_pct": 30.46,
+   "lula_votos": 2808231,
+   "flavio_votos": 1229971
+  },
+  "MG": {
+   "nome": "Minas Gerais",
+   "lula_pct": 50.43,
+   "flavio_pct": 49.57,
+   "lula_votos": 6351099,
+   "flavio_votos": 6241786
+  },
+  "MS": {
+   "nome": "Mato Grosso do Sul",
+   "lula_pct": 40.4,
+   "flavio_pct": 59.6,
+   "lula_votos": 628973,
+   "flavio_votos": 927892
+  },
+  "MT": {
+   "nome": "Mato Grosso",
+   "lula_pct": 33.94,
+   "flavio_pct": 66.06,
+   "lula_votos": 694167,
+   "flavio_votos": 1351099
+  },
+  "PA": {
+   "nome": "Pará",
+   "lula_pct": 55.02,
+   "flavio_pct": 44.98,
+   "lula_votos": 2690449,
+   "flavio_votos": 2199940
+  },
+  "PB": {
+   "nome": "Paraíba",
+   "lula_pct": 67.46,
+   "flavio_pct": 32.54,
+   "lula_votos": 1794059,
+   "flavio_votos": 865210
+  },
+  "PE": {
+   "nome": "Pernambuco",
+   "lula_pct": 69.2,
+   "flavio_pct": 30.8,
+   "lula_votos": 4117513,
+   "flavio_votos": 1832554
+  },
+  "PI": {
+   "nome": "Piauí",
+   "lula_pct": 75.88,
+   "flavio_pct": 24.12,
+   "lula_votos": 1653989,
+   "flavio_votos": 525859
+  },
+  "PR": {
+   "nome": "Paraná",
+   "lula_pct": 37.42,
+   "flavio_pct": 62.58,
+   "lula_votos": 2566504,
+   "flavio_votos": 4291444
+  },
+  "RJ": {
+   "nome": "Rio de Janeiro",
+   "lula_pct": 46.9,
+   "flavio_pct": 53.1,
+   "lula_votos": 4565393,
+   "flavio_votos": 5169033
+  },
+  "RN": {
+   "nome": "Rio Grande do Norte",
+   "lula_pct": 65.72,
+   "flavio_pct": 34.28,
+   "lula_votos": 1413596,
+   "flavio_votos": 737409
+  },
+  "RO": {
+   "nome": "Rondônia",
+   "lula_pct": 30.39,
+   "flavio_pct": 69.61,
+   "lula_votos": 294446,
+   "flavio_votos": 674382
+  },
+  "RR": {
+   "nome": "Roraima",
+   "lula_pct": 27.54,
+   "flavio_pct": 72.46,
+   "lula_votos": 83505,
+   "flavio_votos": 219675
+  },
+  "RS": {
+   "nome": "Rio Grande do Sul",
+   "lula_pct": 42.16,
+   "flavio_pct": 57.84,
+   "lula_votos": 2824552,
+   "flavio_votos": 3874378
+  },
+  "SC": {
+   "nome": "Santa Catarina",
+   "lula_pct": 30.58,
+   "flavio_pct": 69.42,
+   "lula_votos": 1418314,
+   "flavio_votos": 3220071
+  },
+  "SE": {
+   "nome": "Sergipe",
+   "lula_pct": 69.53,
+   "flavio_pct": 30.47,
+   "lula_votos": 989041,
+   "flavio_votos": 433354
+  },
+  "SP": {
+   "nome": "São Paulo",
+   "lula_pct": 46.15,
+   "flavio_pct": 53.85,
+   "lula_votos": 12119274,
+   "flavio_votos": 14139178
+  },
+  "TO": {
+   "nome": "Tocantins",
+   "lula_pct": 48.63,
+   "flavio_pct": 51.37,
+   "lula_votos": 442962,
+   "flavio_votos": 467916
+  }
+ }
+}
