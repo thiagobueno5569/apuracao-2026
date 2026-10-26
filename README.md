@@ -48,7 +48,7 @@ dados/resultado-final.json   resultado final de cada estado, exterior e Brasil
 img/                     imagens deste README
 ```
 
-## Rodar no seu computador
+## Rodar no seu computador  
 
 Baixe o repositório e abra o `index.html` no navegador (Chrome, Edge ou Firefox). Como os dados vêm direto do TSE, a página continua mostrando o resultado enquanto o TSE mantiver os arquivos públicos de 2026 no ar.
 
